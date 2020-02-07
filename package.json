@@ -2,7 +2,7 @@
   "name": "angular-coordinates",
   "version": "2.0.3",
   "description": "Angular component, pipe and service for transforming geolocation coordinates",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "test": "npm run lint && node --max-old-space-size=4096 node_modules/karma/bin/karma start --single-run",
     "lint": "./node_modules/tslint/bin/tslint --type-check --project ./tsconfig.json --config ./tslint.json",
