@@ -1,6 +1,0 @@
-export * from './src/coordinates.pipe'
-export * from './src/coordinates.module'
-export * from './src/coordinates.component'
-export * from './src/coordinates.service'
-export * from './src/transformation-type.enum'
-export * from './src/direction.enum'
