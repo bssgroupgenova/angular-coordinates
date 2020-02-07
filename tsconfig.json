@@ -1,28 +1,20 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "declaration": true,
-    "noImplicitAny": true,
-    "removeComments": true,
-    "noLib": false,
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "listFiles": false,
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "strictNullChecks": false,
-    "stripInternal": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["dom", "es6"],
-    "types": ["jasmine", "node", "core-js"]
-  },
-  "include": ["./src/**/*", "./base.spec", "index.ts"],
-  "exclude": ["node_modules", "dist"],
-  "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "paths": {
+      "angular-coordinates": ["dist/angular-coordinates"]
+    }
   }
 }

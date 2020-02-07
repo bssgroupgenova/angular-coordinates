@@ -1,7 +1,8 @@
-import {Component, Input} from '@angular/core'
-import {TransformationType} from './transformation-type.enum'
-import {getValidTransformationType} from './getTransformationType'
-import {Direction} from './direction.enum'
+import { Component, Input } from '@angular/core';
+
+import { Direction } from './direction.enum';
+import { getValidTransformationType } from './getTransformationType';
+import { TransformationType } from './transformation-type.enum';
 
 @Component({
   selector: 'geo-coordinates',

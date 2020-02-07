@@ -1,4 +1,4 @@
-import {TransformationType} from './transformation-type.enum'
+import { TransformationType } from './transformation-type.enum';
 
 export const getValidTransformationType = (type?: TransformationType): TransformationType => {
   if (!type || (type !== TransformationType.ToDegrees && type !== TransformationType.ToDigit)) {

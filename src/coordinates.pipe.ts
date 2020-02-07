@@ -1,12 +1,11 @@
-import {Pipe, PipeTransform} from '@angular/core'
-import {CoordinatesService} from './coordinates.service'
-import {TransformationType} from './transformation-type.enum'
-import {getValidTransformationType} from './getTransformationType'
-import {Direction} from './direction.enum'
+import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({
-  name: 'coordinates'
-})
+import { CoordinatesService } from './coordinates.service';
+import { Direction } from './direction.enum';
+import { getValidTransformationType } from './getTransformationType';
+import { TransformationType } from './transformation-type.enum';
+
+@Pipe({ name: 'coordinates' })
 export class CoordinatesPipe implements PipeTransform {
   constructor(private coordinatesService: CoordinatesService) {
   }

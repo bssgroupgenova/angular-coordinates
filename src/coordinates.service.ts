@@ -1,5 +1,5 @@
-import {TransformationType} from './transformation-type.enum'
-import {Direction} from './direction.enum'
+import { Direction } from './direction.enum';
+import { TransformationType } from './transformation-type.enum';
 
 type degreeValues = [number, number, number]
 
