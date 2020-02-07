@@ -6,7 +6,7 @@ import { CoordinatesService } from './coordinates.service';
 
 @NgModule({
   providers: [CoordinatesService],
-  exports: [CoordinatesComponent, CoordinatesPipe],
+  exports: [CoordinatesComponent, CoordinatesPipe, CoordinatesService],
   declarations: [CoordinatesComponent, CoordinatesPipe]
 })
 export class CoordinatesModule { }
