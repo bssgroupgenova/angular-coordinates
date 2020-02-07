@@ -4,6 +4,12 @@ import { CoordinatesPipe } from './coordinates.pipe';
 import { CoordinatesService } from './coordinates.service';
 import * as i0 from "@angular/core";
 export class CoordinatesModule {
+    static forRoot() {
+        return {
+            ngModule: CoordinatesModule,
+            providers: [CoordinatesService]
+        };
+    }
 }
 CoordinatesModule.ɵmod = i0.ɵɵdefineNgModule({ type: CoordinatesModule });
 CoordinatesModule.ɵinj = i0.ɵɵdefineInjector({ factory: function CoordinatesModule_Factory(t) { return new (t || CoordinatesModule)(); }, providers: [CoordinatesService] });
