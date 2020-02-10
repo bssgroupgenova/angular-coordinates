@@ -9,7 +9,6 @@
     "unit": "node --max-old-space-size=4096 node_modules/karma/bin/karma start",
     "build": "npm run compile",
     "compile": "ngc",
-    "prepublish": "npm run build",
     "prepare": "npm run build"
   },
   "keywords": [
