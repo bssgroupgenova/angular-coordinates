@@ -10,19 +10,19 @@ import { TransformationType } from './transformation-type.enum';
 })
 export class CoordinatesComponent {
   @Input()
-  value: string | number | null
+  value: string | number | null;
 
   @Input()
-  direction: Direction | undefined
+  direction: Direction | undefined;
 
   @Input()
   set type(type: TransformationType) {
-    this.internalType = getValidTransformationType(type)
+    this.internalType = getValidTransformationType(type);
   }
 
   get type(): TransformationType {
-    return this.internalType
+    return this.internalType;
   }
 
-  private internalType: TransformationType = getValidTransformationType()
+  private internalType: TransformationType = getValidTransformationType();
 }

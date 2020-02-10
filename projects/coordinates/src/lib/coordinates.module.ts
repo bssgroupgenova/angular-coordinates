@@ -10,7 +10,7 @@ import { CoordinatesService } from './coordinates.service';
   declarations: [CoordinatesComponent, CoordinatesPipe]
 })
 export class CoordinatesModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<CoordinatesModule> {
     return {
       ngModule: CoordinatesModule,
       providers: [CoordinatesService]
